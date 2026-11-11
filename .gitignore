@@ -15,3 +15,7 @@ dist/
 *.bin
 wandb/
 out_distill/
+
+# Reproducible, locally generated CPU-only JSONL artifacts
+data/*.jsonl
+results/*/traces.jsonl
