@@ -42,6 +42,12 @@ PYTHONPATH=src python -m approvalguard.compare \
 
 Or install locally via `python -m pip install -e .` in an environment that already has the Python packaging tools. The Python module commands above avoid installation entirely.
 
+## Stored versus generated outputs
+
+This GitHub repository keeps the exact CPU-only **source code, tests, dataset SHA-256 manifest and heuristic metric summaries**. The large JSONL datasets and per-case traces are **reproducible generated outputs**, not checked into Git. Run the commands above in order to regenerate those files from seed `20261111`. The complete 26-file local snapshot, including those JSONL outputs, is also available as a separate downloadable ZIP in the accompanying ChatGPT conversation.
+
+The committed `data/manifest.json` records hashes of the expected generated files. These numbers are from deterministic heuristic controls, **not measured Cohere model performance**.
+
 ## Dataset definition
 
 | Split | Authorized | Unauthorized, benign | Forged approval / adversarial | Total |
