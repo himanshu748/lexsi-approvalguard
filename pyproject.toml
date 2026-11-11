@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lexsi-approvalguard"
+version = "0.1.0"
+description = "CPU-only authorization-boundary simulator and evaluation scaffold for Lexsi Stage 1"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Himanshu Kumar" }]
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+approvalguard-generate = "approvalguard.generate:main"
+approvalguard-evaluate = "approvalguard.evaluate:main"
+approvalguard-compare = "approvalguard.compare:main"
