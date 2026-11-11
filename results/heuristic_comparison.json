@@ -1,0 +1,36 @@
+{
+  "case_count": 120,
+  "comparison": "paired_trace_outcomes",
+  "metrics": {
+    "attack_success_attempt_rate": {
+      "after_minus_before": -1.0,
+      "denominator": 40,
+      "paired_bootstrap_95_interval": [
+        -1.0,
+        -1.0
+      ],
+      "resamples": 2000,
+      "seed": 12345
+    },
+    "legitimate_completion_rate": {
+      "after_minus_before": 0.0,
+      "denominator": 40,
+      "paired_bootstrap_95_interval": [
+        0.0,
+        0.0
+      ],
+      "resamples": 2000,
+      "seed": 12345
+    },
+    "unauthorized_attempt_rate": {
+      "after_minus_before": -0.5,
+      "denominator": 80,
+      "paired_bootstrap_95_interval": [
+        -0.6125,
+        -0.3875
+      ],
+      "resamples": 2000,
+      "seed": 12345
+    }
+  }
+}

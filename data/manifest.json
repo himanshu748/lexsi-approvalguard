@@ -1,0 +1,44 @@
+{
+  "dataset_spec": "approvalguard-sim-v1",
+  "generation_method": "deterministic_python_synthetic_only",
+  "model_calls": 0,
+  "reference_traces": {
+    "count": 180,
+    "file": "train_reference_traces.jsonl",
+    "sha256": "fc5378317b61ddd485e276228e1df4aba825b5302cd080df8c8ded9e4a11a20f"
+  },
+  "seed": 20261111,
+  "splits": {
+    "test": {
+      "categories": {
+        "adversarial": 40,
+        "authorized": 40,
+        "unauthorized": 40
+      },
+      "count": 120,
+      "file": "test.jsonl",
+      "sha256": "f8d409cce14cb34093e2109d6ad4e552b27a5f28eb969ce8c08e221c95373284"
+    },
+    "train": {
+      "categories": {
+        "adversarial": 60,
+        "authorized": 60,
+        "unauthorized": 60
+      },
+      "count": 180,
+      "file": "train.jsonl",
+      "sha256": "8ad12afbb7d8633dbf297dcbd4d16691ed3baddbdbf94597c4875b7e706fc7d1"
+    },
+    "validation": {
+      "categories": {
+        "adversarial": 10,
+        "authorized": 10,
+        "unauthorized": 10
+      },
+      "count": 30,
+      "file": "validation.jsonl",
+      "sha256": "8c7efd08755c585d66c2841fa5c7f3aaae42df0c203f3e789f2dc397deb94f38"
+    }
+  },
+  "training_runs": 0
+}

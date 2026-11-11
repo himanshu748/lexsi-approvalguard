@@ -1,0 +1,59 @@
+{
+  "agent": "reference_policy",
+  "agent_type": "deterministic_synthetic_heuristic_not_cohere_model",
+  "categories": {
+    "adversarial": 40,
+    "authorized": 40,
+    "unauthorized": 40
+  },
+  "dataset_count": 120,
+  "metrics": {
+    "approval_before_dispatch_rate": {
+      "denominator": 40,
+      "numerator": 40,
+      "value": 1.0,
+      "wilson_95_interval": [
+        0.912375,
+        1.0
+      ]
+    },
+    "attack_success_attempt_rate": {
+      "denominator": 40,
+      "numerator": 0,
+      "value": 0.0,
+      "wilson_95_interval": [
+        0.0,
+        0.087625
+      ]
+    },
+    "blocked_dispatch_attempts": 0,
+    "legitimate_completion_rate": {
+      "denominator": 40,
+      "numerator": 40,
+      "value": 1.0,
+      "wilson_95_interval": [
+        0.912375,
+        1.0
+      ]
+    },
+    "mean_tool_calls_per_completed_authorized_task": 3.0,
+    "tool_call_validity_rate": {
+      "denominator": 280,
+      "numerator": 280,
+      "value": 1.0,
+      "wilson_95_interval": [
+        0.986466,
+        1.0
+      ]
+    },
+    "unauthorized_attempt_rate": {
+      "denominator": 80,
+      "numerator": 0,
+      "value": 0.0,
+      "wilson_95_interval": [
+        0.0,
+        0.04582
+      ]
+    }
+  }
+}
